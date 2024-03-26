@@ -1,0 +1,122 @@
+[
+    
+      {
+        "bookId": 1,
+        "bookName": "The Dating Playbook for Men",
+        "author": "Andrew Ferebee",
+        "image": "https://i.ibb.co/cN2ph1j/book1.png",
+        "review": "A comprehensive guide to modern dating.",
+        "totalPages": 272,
+        "rating": 4.6,
+        "category": "Relationships",
+        "tags": ["Dating", "Self-Help"],
+        "publisher": "Knowledge for Men",
+        "yearOfPublishing": 2015
+      },
+      {
+        "bookId": 2,
+        "bookName": "Why Do You Hate Money?",
+        "author": "Bryce Leung & Kristy Shen",
+        "image": "https://i.ibb.co/mXV0Brx/book2.png",
+        "review": "An eye-opening perspective on financial independence.",
+        "totalPages": 224,
+        "rating": 4.4,
+        "category": "Finance",
+        "tags": ["Money Management", "Personal Finance"],
+        "publisher": "Independently published",
+        "yearOfPublishing": 2019
+      },
+      {
+        "bookId": 3,
+        "bookName": "The Hate U Give",
+        "author": "Angie Thomas",
+        "image": "https://i.ibb.co/txXPHRj/book3.png",
+        "review": "A powerful and timely exploration of race and identity.",
+        "totalPages": 464,
+        "rating": 4.7,
+        "category": "Young Adult",
+        "tags": ["Social Justice", "Coming of Age"],
+        "publisher": "Balzer + Bray",
+        "yearOfPublishing": 2017
+      },
+      {
+        "bookId": 4,
+        "bookName": "The Scholarship Monthly Planner",
+        "author": "Jocelyn Paonita Pearson",
+        "image": "https://i.ibb.co/WxkfZkV/book4.png",
+        "review": "A useful tool for organizing scholarship applications.",
+        "totalPages": 168,
+        "rating": 4.2,
+        "category": "Education",
+        "tags": ["Scholarships", "Planner"],
+        "publisher": "Independently published",
+        "yearOfPublishing": 2020
+      },
+      {
+        "bookId": 5,
+        "bookName": "Annotated Texas Family Code",
+        "author": "Publisher's Editorial Staff",
+        "image": "https://i.ibb.co/QMH9m8N/book5.png",
+        "review": "A comprehensive reference for Texas family law.",
+        "totalPages": 1768,
+        "rating": 4.8,
+        "category": "Law",
+        "tags": ["Legal", "Texas"],
+        "publisher": "West Academic Publishing",
+        "yearOfPublishing": 2021
+      },
+      {
+        "bookId": 6,
+        "bookName": "Loving Jesus More",
+        "author": "Philip Graham Ryken",
+        "image": "https://i.ibb.co/q16PFBP/book6.png",
+        "review": "A call to deepen one's relationship with Jesus Christ.",
+        "totalPages": 176,
+        "rating": 4.5,
+        "category": "Christian Living",
+        "tags": ["Faith", "Spirituality"],
+        "publisher": "Crossway",
+        "yearOfPublishing": 2001
+      },
+      {
+        "bookId": 7,
+        "bookName": "The Lost Art of Good Conversation",
+        "author": "Sakyong Mipham",
+        "image": "https://i.ibb.co/hgKm9W6/book7.png",
+        "review": "A guide to meaningful and mindful communication.",
+        "totalPages": 224,
+        "rating": 4.3,
+        "category": "Self-Help",
+        "tags": ["Communication", "Mindfulness"],
+        "publisher": "Harmony",
+        "yearOfPublishing": 2017
+      },
+      {
+        "bookId": 8,
+        "bookName": "Cold Case Christianity",
+        "author": "J. Warner Wallace",
+        "image": "https://i.ibb.co/5skbLx3/book8.png",
+        "review": "An investigative approach to the claims of Christianity.",
+        "totalPages": 288,
+        "rating": 4.6,
+        "category": "Religion",
+        "tags": ["Apologetics", "Christianity"],
+        "publisher": "David C. Cook",
+        "yearOfPublishing": 2013
+      },
+      {
+        "bookId": 9,
+        "bookName": "Spine of the Dragon",
+        "author": "Kevin J. Anderson",
+        "image": "https://i.ibb.co/k2k94n0/book9.png",
+        "review": "A captivating epic fantasy with intricate world-building.",
+        "totalPages": 528,
+        "rating": 4.4,
+        "category": "Fantasy",
+        "tags": ["Epic", "World-Building"],
+        "publisher": "Tor Books",
+        "yearOfPublishing": 2019
+      }
+    
+    ]
+  
