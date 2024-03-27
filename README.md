@@ -1,8 +1,13 @@
-# React + Vite
+#Book Vibe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+live site link: https://effervescent-lebkuchen-920572.netlify.app/
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features and Characteristics of the website:
+* Displays a diverse range of books available for reading.
+* Provides comprehensive details about each book, including title, author, genre, and synopsis.
+* Allows users to sort and filter the book list.
+* Offers a book club membership option for users.
+* Offers an intuitive and user-friendly interface for seamless browsing.
+* Simplifies the process of finding, selecting, and reading books.
+* Ensures accessibility across different devices, enhancing the overall user experience.
+* Premium book club members enjoy exclusive benefits 
