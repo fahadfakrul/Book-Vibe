@@ -2,9 +2,9 @@
 import { Link } from "react-router-dom";
 import { MdOutlineStarBorder } from "react-icons/md";
 const Book = ({book}) => {
-    const {tags,bookName,author,image,category,rating,bookId} = book;
+    const {tags,bookName,author,image,category,rating} = book;
     return (
-        <Link to={`/book/${bookId}`}>
+        <Link to={`/book/${book.bookId}`}>
              <div className="card w-96 bg-base-100 shadow-xl border border-[#13131326] transition  hover:scale-105 border-opacity-30">
             <figure className="px-10 pt-10">
               <img
