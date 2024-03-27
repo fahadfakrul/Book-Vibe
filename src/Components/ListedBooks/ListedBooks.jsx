@@ -3,8 +3,20 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import ReadBooks from "../ReadBooks/ReadBooks";
 import Wishlist from "../Wishlist/Wishlist";
+import { useEffect, useState } from "react";
+import { getBooks, getWishlistBooks } from "../Utils";
 
 const ListedBooks = () => {
+    const [books,setBooks]= useState([]);
+    const [wishList,setWishlistBooks]= useState([]);
+    useEffect(() => {
+        const storedBooks = getBooks()
+        setBooks(storedBooks);
+    },[]);
+    useEffect(() => {
+        const storedWishListBooks = getWishlistBooks()
+        setWishlistBooks(storedWishListBooks);
+    },[]);
   return (
     <div className="container mx-auto">
       <div className="grid h-20 card bg-base-300 rounded-box place-items-center text-black text-3xl font-bold">
@@ -38,10 +50,12 @@ const ListedBooks = () => {
           </div>
 
           <TabPanel>
-            <ReadBooks></ReadBooks>
+               {books.map(book =>(<ReadBooks key={book.bookId} book={book}></ReadBooks>))}
+           
           </TabPanel>
           <TabPanel>
-          <Wishlist></Wishlist>
+          {wishList.map(wishList =>(<Wishlist key={wishList.bookId} wishList={wishList}></Wishlist>))}
+          
           </TabPanel>
         </Tabs>
       </div>
