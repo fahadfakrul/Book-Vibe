@@ -1,4 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { saveBook, saveWishlistBook } from "../Utils";
 
 const BookDetails = () => {
   const books = useLoaderData();
@@ -6,6 +7,11 @@ const BookDetails = () => {
   const idInt = parseInt(id);
   const book = books.find((book) => book.bookId === idInt);
   console.log(book);
+
+  const handleReadClick = book =>{console.log(book);
+    saveBook(book);}
+  const handleWishlistClick = book => {console.log(book);
+  saveWishlistBook(book);}
   return (
     <div className="container mx-auto">
       <section className="">
@@ -44,8 +50,7 @@ const BookDetails = () => {
               <p
                 className="text-[#0D0D0DB3] text-base font-normal my-6"
               >
-              <span className="text-black font-bold text-base  mr-4"> Tag: </span><a rel="noopener noreferrer" href="#" className="text-base font-medium tracking-wider uppercase hover:underline dark:text-[#23BE0A] mr-4">#{book.tags[0]}</a>
-            <a rel="noopener noreferrer" href="#" className="text-base font-medium tracking-wider uppercase hover:underline dark:text-[#23BE0A]">#{book.tags[1]}</a>
+              <span className="text-black font-bold text-base  mr-4"> Tag:{book.tags.map(tag=><a key={book.bookId} rel="noopener noreferrer" href="#" className="text-base font-medium tracking-wider uppercase hover:underline dark:text-[#23BE0A] mr-4"> #{tag}</a>)} </span>
               </p>
               <hr className="mb-4" />
               <p
@@ -71,20 +76,18 @@ const BookDetails = () => {
             </p>
             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
               
-              <a
-                rel="noopener noreferrer"
-                href="#"
-                className=" btn px-8 py-3 text-lg text-[#131313] font-semibold border rounded dark:border-[#0D0D0D4D]"
+              <div
+                onClick={()=> handleReadClick(book)}
+                className=" btn px-8 py-3 text-lg text-[#131313] font-semibold border rounded-lg dark:border-[#0D0D0D4D]"
               >
                 Read
-              </a>
-              <a
-                rel="noopener noreferrer"
-                href="#"
-                className="btn px-8 py-3 text-lg font-semibold rounded dark:bg-[#50B1C9] dark:text-gray-50"
+              </div>
+              <div
+               onClick={() => handleWishlistClick(book)}
+                className="btn px-8 py-3 text-lg font-semibold rounded-lg dark:bg-[#50B1C9] dark:text-gray-50"
               >
                 Wishlist
-              </a>
+              </div>
             </div>
           </div>
         </div>

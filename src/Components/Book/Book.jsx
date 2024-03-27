@@ -15,8 +15,7 @@ const Book = ({book}) => {
             </figure>
             
             <div className="card-body  ">
-           <div className="flex gap-11 px-4"> <a rel="noopener noreferrer" href="#" className="text-base font-medium tracking-wider uppercase hover:underline dark:text-[#23BE0A]">{tags[0]}</a>
-            <a rel="noopener noreferrer" href="#" className="text-base font-medium tracking-wider uppercase hover:underline dark:text-[#23BE0A]">{tags[1]}</a></div>
+           <div className="flex gap-11 px-4"> {tags.map(tag=><a key={book.bookId} rel="noopener noreferrer" href="#" className="text-base font-medium tracking-wider uppercase hover:underline dark:text-[#23BE0A] mr-4"> #{tag}</a>)}</div>
               <div className=" mt-6" ><div className="h-24">
               <h2 className="card-title text-2xl font-bold font-playfair-display text-black mb-4">{bookName}</h2>
               </div>
