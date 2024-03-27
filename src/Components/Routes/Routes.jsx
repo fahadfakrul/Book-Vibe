@@ -6,6 +6,9 @@ import ListedBooks from "../ListedBooks/ListedBooks";
 
 import ErrorPage from "../../Pages/error-page";
 import PagesToRead from "../PagesToRead/PagesToRead";
+import BookClub from "../BookClub/BookClub";
+import Pricing from "../Pricing/Pricing";
+
 
 
 
@@ -33,6 +36,15 @@ export const router = createBrowserRouter([
         {
             path: '/pagestoread',
             element: <PagesToRead></PagesToRead>
+        },
+        {
+            path: '/bookclub',
+            element: <BookClub></BookClub>,
+            loader: () => fetch('/bookclub.json')
+        },
+        {
+            path: '/pricing',
+            element: <Pricing></Pricing>
         }
       ]
     },

@@ -1,0 +1,42 @@
+
+     [
+      {
+        "name": "Literary Lions Book Club",
+        "description": "Join us for lively discussions on classic literature from around the world.",
+        "meeting_schedule": "Every second Saturday of the month at 2:00 PM EST",
+        "contact_email": "literarylions@example.com",
+        "image":"https://i.ibb.co/jVmpP0T/devon-divine-Hzp-1ua8-DVE-unsplash.jpg"
+      },
+      {
+        "name": "Mystery Masterminds Book Club",
+        "description": "Delve into the depths of mystery and suspense with fellow enthusiasts.",
+        "meeting_schedule": "Third Thursday of every month at 7:00 PM EST",
+        "contact_email": "mysterymasterminds@example.com",
+        "image":"https://i.ibb.co/1QhfGdz/alexis-brown-omea-Hb-EFl-N4-unsplash.jpg"
+      },
+      {
+        "name": "Sci-Fi Spectacles Book Club",
+        "description": "Explore the vast universe of science fiction with us!",
+        "meeting_schedule": "First Wednesday of every month at 6:00 PM EST",
+        "contact_email": "scifispectacles@example.com",
+        "image":"https://i.ibb.co/fpjpQMz/tom-hermans-9-Boq-Xz-Ee-Qq-M-unsplash.jpg"
+      },
+      {
+        "name": "Fantasy Fellowship Book Club",
+        "description": "Embark on epic adventures and mystical quests with fellow fantasy lovers.",
+        "meeting_schedule": "Last Friday of every month at 8:00 PM EST",
+        "contact_email": "fantasyfellowship@example.com",
+        "image":"https://i.ibb.co/DgpBmwz/christin-hume-k2-Kcwkandwg-unsplash.jpg"
+        
+      },
+      {
+        "name": "Historical Harmony Book Club",
+        "description": "Journey through the annals of history with us as we explore captivating historical fiction.",
+        "meeting_schedule": "Second Sunday of every month at 4:00 PM EST",
+        "contact_email": "historicalharmony@example.com",
+        "image":"https://i.ibb.co/1Rk3rwf/giammarco-boscaro-ze-H-ljaw-Htg-unsplash.jpg"
+       
+      }
+    ]
+  
+  
