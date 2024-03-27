@@ -42,7 +42,7 @@ const ReadBooks = ({book}) => {
                     </div>
                   </div>
                   <hr className="mb-4" />
-                  <div className="flex items-center gap-3">
+                  <div className="flex flex-col lg:flex-row items-center gap-3">
                     <div className="bg-[#328EFF26] text-[#328EFF] px-5 py-3 rounded-full"><p>Category: {category}</p></div>
                     <div className="bg-[#FFAC3326] text-[#FFAC33] px-5 py-3 rounded-full">
                         <p>Rating: {rating}</p>

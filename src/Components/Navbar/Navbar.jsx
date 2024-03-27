@@ -31,7 +31,7 @@ const Navbar = () => {
             className={({ isActive }) =>
               isActive ? 'font-semibold text-lg primary-color border border-primary-color px-5 py-3 rounded-lg ' : 'font-normal text-lg'
             }
-            to='/bookmarks'
+            to='/pagestoread'
           >
             Pages to Read
           </NavLink>
@@ -39,21 +39,21 @@ const Navbar = () => {
             className={({ isActive }) =>
               isActive ? 'font-semibold text-lg primary-color border border-primary-color px-5 py-3 rounded-lg ' : 'font-normal text-lg'
             }
-            to='/bookmarks'
+            to='/bookclub'
           >
-            New
+            Book Club
           </NavLink>
           <NavLink
             className={({ isActive }) =>
               isActive ? 'font-semibold text-lg primary-color border border-primary-color px-5 py-3 rounded-lg ' : 'font-normal text-lg'
             }
-            to='/bookmarks'
+            to='/pricing'
           >
-           Neww
+           Pricing
           </NavLink>
       </ul>
     </div>
-    <NavLink to="/" className="btn btn-ghost text-xl lg:text-2xl font-bold">Book Vibe</NavLink>
+    <NavLink to="/" className="btn btn-ghost text-xl  lg:text-2xl font-bold">Book Vibe</NavLink>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 flex items-center gap-4">
@@ -100,7 +100,7 @@ const Navbar = () => {
           </NavLink>
     </ul>
   </div>
-  <div className="navbar-end flex  gap-4">
+  <div className="navbar-end flex flex-col lg:flex-row   lg:gap-4">
     <a className="btn text-white bg-[#23BE0A]">Sign In</a>
     <a className="btn text-white bg-[#59C6D2]">Sign Up</a>
   </div>

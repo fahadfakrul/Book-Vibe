@@ -9,14 +9,50 @@ import { getBooks, getWishlistBooks } from "../Utils";
 const ListedBooks = () => {
     const [books,setBooks]= useState([]);
     const [wishList,setWishlistBooks]= useState([]);
+    const [displayBooks,setDisplayBooks]= useState([]);
+    const [displayWishlistBooks,setDisplayWishlistBooks]= useState([]);
+   
+    
+
+    
+    const handleBooksFilter = (filter) => {
+        let sortedBooks = [...books]; 
+        let sortedWishlistBooks = [...wishList];
+      
+        switch (filter) {
+          case "Rating":
+            sortedBooks.sort((a, b) => b.rating - a.rating); 
+            sortedWishlistBooks.sort((a, b) => b.rating - a.rating);  
+            break;
+          case "Number of pages":
+            sortedBooks.sort((a, b) => b.totalPages - a.totalPages);  
+            sortedWishlistBooks.sort((a, b) => b.totalPages - a.totalPages); 
+            break;
+          case "Publishing year":
+            sortedBooks.sort((a, b) => b.yearOfPublishing - a.yearOfPublishing); 
+            sortedWishlistBooks.sort((a, b) => b.yearOfPublishing - a.yearOfPublishing); 
+            break;
+          default:
+            break;
+        }
+      
+        setDisplayBooks(sortedBooks); 
+        setDisplayWishlistBooks(sortedWishlistBooks);
+      };
+      
+    
     useEffect(() => {
         const storedBooks = getBooks()
         setBooks(storedBooks);
+        setDisplayBooks(storedBooks);
     },[]);
     useEffect(() => {
         const storedWishListBooks = getWishlistBooks()
         setWishlistBooks(storedWishListBooks);
+        setDisplayWishlistBooks(storedWishListBooks);
     },[]);
+
+    
   return (
     <div className="container mx-auto">
       <div className="grid h-20 card bg-base-300 rounded-box place-items-center text-black text-3xl font-bold">
@@ -28,14 +64,14 @@ const ListedBooks = () => {
             Sort By <IoChevronDown />
           </summary>
           <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52 items-center">
-            <li>
+            <li onClick={() => handleBooksFilter("Rating")}>
               <a>Rating</a>
             </li>
-            <li>
-              <a>Number of pages</a>
+            <li onClick={() => handleBooksFilter("Number of pages")}>
+              <a >Number of pages</a>
             </li>
-            <li>
-              <a>Publishing year</a>
+            <li onClick={() => handleBooksFilter("Publishing year") }>
+              <a>Publishing year</a> 
             </li>
           </ul>
         </details>
@@ -50,11 +86,11 @@ const ListedBooks = () => {
           </div>
 
           <TabPanel>
-               {books.map(book =>(<ReadBooks key={book.bookId} book={book}></ReadBooks>))}
+               {displayBooks.map(book =>(<ReadBooks key={book.bookId} book={book}></ReadBooks>))}
            
           </TabPanel>
           <TabPanel>
-          {wishList.map(wishList =>(<Wishlist key={wishList.bookId} wishList={wishList}></Wishlist>))}
+          {displayWishlistBooks.map(wishList =>(<Wishlist key={wishList.bookId} wishList={wishList}></Wishlist>))}
           
           </TabPanel>
         </Tabs>

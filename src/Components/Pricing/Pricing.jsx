@@ -40,8 +40,8 @@ const Pricing = () => {
 					<button type="button" className="btn inline-block px-5 py-3 font-semibold tracking-wider text-center rounded dark:bg-[#23BE0A] dark:text-gray-50">Get Started</button>
 				</div>
 			</div>
-			<div className="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
-				<div className="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8 dark:bg-[#23BE0A] dark:text-gray-50">
+			<div className="flex w-full mb-8  sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
+				<div className="flex flex-grow flex-col  p-6 space-y-6 rounded shadow sm:p-8 dark:bg-[#23BE0A] dark:text-gray-50">
 					<div className="space-y-2">
 						<h4 className="text-2xl font-bold">Standard</h4>
 						<span className="text-6xl font-bold">$5
@@ -81,7 +81,7 @@ const Pricing = () => {
 					<button type="button" className="btn inline-block px-5 py-3 font-semibold tracking-wider text-center rounded dark:bg-[#23BE0A] dark:text-gray-50">Get Started</button>
 				</div>
 			</div>
-			<div className="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
+			<div className="flex w-full mb-8  sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
 				<div className="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8 dark:bg-gray-50">
 					<div className="space-y-2">
 						<h4 className="text-2xl font-bold">Premium</h4>
