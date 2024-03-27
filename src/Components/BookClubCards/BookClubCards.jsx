@@ -1,4 +1,6 @@
 
+import PropTypes from 'prop-types';
+
 const BookClubCards = ({club}) => {
     const {name,description,meeting_schedule,image} = club;
     return (
@@ -18,5 +20,9 @@ const BookClubCards = ({club}) => {
     </article>
     );
 };
+
+BookClubCards.propTypes = {
+    club: PropTypes.object
+}
 
 export default BookClubCards;

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { SlLocationPin } from "react-icons/sl";
 import { GoPeople } from "react-icons/go";
 import { HiOutlineDocumentChartBar } from "react-icons/hi2";
@@ -54,6 +55,10 @@ const Wishlist = ({wishList}) => {
             </div>
         </div>
     );
+};
+
+Wishlist.propTypes = {
+  wishList: PropTypes.object.isRequired,
 };
 
 export default Wishlist;

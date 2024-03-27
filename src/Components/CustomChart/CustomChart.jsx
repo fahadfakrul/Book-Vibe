@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from 'recharts';
 
 const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
@@ -39,4 +39,14 @@ const CustomChart = ({books}) => {
     );
 };
 
+CustomChart.propTypes = {
+    books: PropTypes.object,
+    fill: PropTypes.string.isRequired,
+    x: PropTypes.number.isRequired,
+    y: PropTypes.number.isRequired,
+    width: PropTypes.number.isRequired,
+    height: PropTypes.number.isRequired,
+    
+ 
+}
 export default CustomChart;

@@ -1,4 +1,5 @@
 import { SlLocationPin } from "react-icons/sl";
+import PropTypes from 'prop-types';
 import { GoPeople } from "react-icons/go";
 import { HiOutlineDocumentChartBar } from "react-icons/hi2";
 import { Link } from "react-router-dom";
@@ -56,4 +57,7 @@ const ReadBooks = ({book}) => {
     );
 };
 
+ReadBooks.propTypes = {
+    book:PropTypes.object
+}
 export default ReadBooks;
