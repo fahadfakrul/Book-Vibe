@@ -12,7 +12,7 @@ const Banner = () => {
             </h1>
 
             <Link to="/listedbooks" className="btn text-white bg-[#23BE0A] px-7  text-xl font-bold ">
-              Get Started
+              View the list
             </Link>
           </div>
         </div>
