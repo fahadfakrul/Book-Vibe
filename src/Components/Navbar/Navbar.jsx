@@ -21,9 +21,9 @@ const Navbar = () => {
 
           <NavLink
             className={({ isActive }) =>
-              isActive ? 'font-semibold text-lg primary-color border border-primary-color px-5 py-3 rounded-lg ' : 'font-normal text-lg'
+            isActive ? 'font-semibold text-lg primary-color border border-primary-color px-5 py-3 rounded-lg ' : 'font-normal text-lg'
             }
-            to='/blogs'
+            to='/listedBooks'
           >
            Listed Books
           </NavLink>
@@ -70,7 +70,7 @@ const Navbar = () => {
             className={({ isActive }) =>
               isActive ? 'font-semibold text-lg primary-color border border-primary-color px-5 py-3 rounded-lg ' : 'font-normal text-lg'
             }
-            to='/blogs'
+            to='/listedbooks'
           >
            Listed Books
           </NavLink>

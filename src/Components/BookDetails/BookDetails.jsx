@@ -9,15 +9,15 @@ const BookDetails = () => {
   return (
     <div className="container mx-auto">
       <section className="">
-        <div className="container flex flex-col justify-center p-6 mx-auto  lg:flex-row lg:justify-between border border-red-600">
+        <div className="container flex flex-col justify-center p-6 mx-auto  lg:flex-row lg:justify-between ">
           <div className="flex items-center justify-center lg:w-1/2 p-6 mt-8 lg:mt-0  ">
             <img
               src={book.image}
               alt=""
-              className="  rounded-2xl border border-red-600"
+              className="  rounded-2xl "
             />
           </div>
-          <div className="flex flex-col  text-center rounded-sm lg:w-1/2 lg:text-left border border-blue-800">
+          <div className="flex flex-col  text-center rounded-sm lg:w-1/2 lg:text-left ">
             <h1 className="text-4xl font-bold leading-none sm:text-3xl font-playfair-display text-black">
               {book.bookName}
             </h1>
