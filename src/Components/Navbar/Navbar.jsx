@@ -78,7 +78,7 @@ const Navbar = () => {
             className={({ isActive }) =>
               isActive ? 'font-semibold text-lg primary-color border border-primary-color px-5 py-3 rounded-lg ' : 'font-normal text-lg'
             }
-            to='/bookmarks'
+            to='/pagestoread'
           >
             Pages to Read
           </NavLink>

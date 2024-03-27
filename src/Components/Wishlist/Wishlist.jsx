@@ -1,6 +1,7 @@
 import { SlLocationPin } from "react-icons/sl";
 import { GoPeople } from "react-icons/go";
 import { HiOutlineDocumentChartBar } from "react-icons/hi2";
+import { Link } from "react-router-dom";
 const Wishlist = ({wishList}) => {
     const {bookName,image,author,tags,bookId,publisher,totalPages,yearOfPublishing,rating,category} = wishList;
     return (
@@ -46,7 +47,7 @@ const Wishlist = ({wishList}) => {
                     <div className="bg-[#FFAC3326] text-[#FFAC33] px-5 py-3 rounded-full">
                         <p>Rating: {rating}</p>
                     </div>
-                    <button className="btn text-white bg-[#23BE0A] rounded-full">Get Started</button>
+                    <Link to={`/book/${bookId}`} className="btn text-white bg-[#23BE0A] rounded-full">View Details</Link>
                   </div>
                 </div>
               </div>
